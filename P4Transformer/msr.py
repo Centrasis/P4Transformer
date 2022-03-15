@@ -10,8 +10,8 @@ ROOT_DIR = os.path.dirname(BASE_DIR)
 sys.path.append(ROOT_DIR)
 sys.path.append(os.path.join(ROOT_DIR, 'modules'))
 
-from point_4d_convolution import *
-from transformer import *
+from P4Transformer.point_4d_convolution import *
+from P4Transformer.transformer import *
 
 
 class P4Transformer(nn.Module):

@@ -68,8 +68,8 @@ at::Tensor gather_points_grad(at::Tensor grad_out, at::Tensor idx,
   return output;
 }
 at::Tensor furthest_point_sampling(at::Tensor points, const int nsamples) {
-  CHECK_CONTIGUOUS(points);
-  CHECK_IS_FLOAT(points);
+  //CHECK_CONTIGUOUS(points);
+  //CHECK_IS_FLOAT(points);
 
   at::Tensor output =
       torch::zeros({points.size(0), nsamples},

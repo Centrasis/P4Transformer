@@ -5,14 +5,9 @@ import numpy as np
 import sys 
 import os
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-ROOT_DIR = os.path.dirname(BASE_DIR)
-sys.path.append(ROOT_DIR)
-sys.path.append(os.path.join(ROOT_DIR, 'modules'))
-
-import pointnet2_utils
-from point_4d_convolution import *
-from transformer import *
+import P4Transformer.pointnet2_utils as pointnet2_utils
+from P4Transformer.point_4d_convolution import *
+from P4Transformer.transformer import *
 
 class P4Transformer(nn.Module):
     def __init__(self, radius=0.9, nsamples=3*3, num_classes=12):

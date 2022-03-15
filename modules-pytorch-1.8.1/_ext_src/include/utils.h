@@ -25,6 +25,6 @@
 
 #define CHECK_IS_FLOAT(x)                              \
   do {                                                 \
-    TORCH_CHECK(x.scalar_type() == at::ScalarType::Float, \
-             #x " must be a float tensor");            \
+    TORCH_CHECK(x.scalar_type() == at::kFloat || x.scalar_type() == at::kDouble || x.scalar_type() == at::kFloat32 || x.scalar_type() == at::Float64, \
+             #x " must be a float tensor!!");            \
   } while (0)

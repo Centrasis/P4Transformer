@@ -9,7 +9,7 @@ import sys
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(BASE_DIR)
 
-import pointnet2_utils
+import P4Transformer.pointnet2_utils as pointnet2_utils
 from typing import List
 
 

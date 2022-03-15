@@ -24,6 +24,7 @@ setup(name='P4Transformer',
          'torch>=1.8.0',
          'torchvision>=0.9.2+cu111',
          'torchaudio>=0.8.2',
+         'einops',
          'pointnet2 @ file://localhost/' + os.path.join(os.path.abspath(os.path.dirname(__file__)), 'modules-pytorch-1.8.1').replace('\\', '/')
       ],
       cmdclass={},
